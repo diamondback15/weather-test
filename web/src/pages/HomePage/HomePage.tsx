@@ -45,6 +45,8 @@ const HomePage = () => {
   const [error, setError] = useState('')
 
   const onSubmit = (data) => {
+    setError('')
+
     fetch(
       `https://api.openweathermap.org/data/2.5/weather?zip=${data.zip},us&appid=${process.env.OWM_ID}`
     )
