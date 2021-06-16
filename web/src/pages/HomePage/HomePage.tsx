@@ -46,7 +46,7 @@ const HomePage = () => {
 
   const onSubmit = (data) => {
     fetch(
-      `https://api.openweathermap.org/data/2.5/weather?zip=${data.zip},us&appid=${process.env.API_KEY}`
+      `https://api.openweathermap.org/data/2.5/weather?zip=${data.zip},us&appid=${process.env.OWM_ID}`
     )
       .then((response) => {
         if (response.status === 200) {
