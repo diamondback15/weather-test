@@ -1,7 +1,10 @@
 [build]
-command = "yarn rw deploy netlify"
-publish = "web/dist"
-functions = "api/dist/functions"
+  command = "yarn rw deploy netlify"
+  publish = "web/dist"
+  functions = "api/dist/functions"
+
+[build.environment]
+  OWM_ID = "own-id"
 
 [dev]
   command = "yarn rw dev"
