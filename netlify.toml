@@ -4,7 +4,7 @@
   functions = "api/dist/functions"
 
 [build.environment]
-  OWM_ID = ""
+  OWM_ID = "64b4b10ceecd6698a53792d0a68737cc"
 
 [dev]
   command = "yarn rw dev"
