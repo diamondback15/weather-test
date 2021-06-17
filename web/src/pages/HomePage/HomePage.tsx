@@ -28,6 +28,10 @@ const SubmitForm = styled(Submit)`
   border: none;
   background: #5bc1ef;
   font-weight: 600;
+  transition: all 0.3s;
+
+  &:hover {
+  }
 `
 const Title = styled.h1`
   color: white;
